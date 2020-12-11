@@ -1,0 +1,1 @@
+Born_CartItemsDownload module allows a customer to download a CSV file of all the items that are currently in his/her cart, if this feature is enabled in the Admin path: "STORES>Configuration>SALES>Checkout>Shopping Cart>Enable Items Download by Customer".
