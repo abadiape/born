@@ -1,0 +1,24 @@
+<?php
+/**
+ * Copyright 2020 © Born, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate
+
+/**  @var $block \Born\CartItemsDownload\Block\Cart\Download */
+?>
+
+<?php if ($block->isCartDownloadAllowed()) :?>
+<button type="button"
+        name="download_cart_action"
+        data-cart-items-download=""
+        value="download_cart"
+        title="<?= $block->escapeHtmlAttr(__('Download Cart Items')) ?>"
+	data-mage-init='{"Born_CartItemsDownload/js/action/download-shopping-cart":
+              {"downloadURL" : "<?= $block->escapeUrl($block->getUrl('checkout/cart/downloadItems')) ?>"}
+        }'
+        class="action download" id="download_cart_button">
+    <span><?= $block->escapeHtml(__('Download Cart Items')) ?></span>
+</button>
+<?php endif ?>
